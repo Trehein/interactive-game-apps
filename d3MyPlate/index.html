@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MyPlate Matching</title>
+    <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'IBM Plex Sans', sans-serif;
+      }
+      #myPlateBox {
+        height: 900px;
+        width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .ingredientHeader {
+        font-size: 2.5em;
+      }
+      .label, .dairyLabel {
+        font-size: 1.65em;
+        text-shadow: 2px 2px 4px #000000;
+      }
+      h1 {
+        font-size: 3.5em;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .foodLabel {
+        font-size: 1.75em;
+      }
+      .foodCircle {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      .winCircle {
+
+      }
+      .winLabel {
+        font-size: 1.75em;
+      }
+      .totalLabel {
+        font-size: 1.75em;
+        /* text-shadow: 2px 2px 4px #000000; */
+        opacity: .75;
+      }
+      .totalGroup {
+        font-size: 1em;
+      }
+      .totalLine {
+        opacity: .75;
+      }
+      .info {
+        font-size: 3em;
+      }
+    </style>
+  </head>
+  <body>
+    <audio id="slideWhistle">
+      <source src="soundFx/Cartoon-slide-whistle-up-and-down-sound-effect.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="coinCollect">
+      <source src="soundFx/Coin-collect-sound-effect.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="failureSound">
+      <source src="soundFx/Failure-sound-effect.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="fanfareSound">
+      <source src="soundFx/Fanfare-sound.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="funnyButton">
+      <source src="soundFx/Funny-button-sound.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="oops">
+      <source src="soundFx/Oops.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="gameOver">
+      <source src="soundFx/Game-over-yeah.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="uhOh">
+      <source src="soundFx/Uh-oh-sound-effect.mp3">
+    </audio>
+
+    <h1>Make MyPlate!</h1>
+    <div id="myPlateBox">
+
+    </div>
+  <script src="myPlate.js" charset="utf-8"></script>
+  </body>
+</html>
